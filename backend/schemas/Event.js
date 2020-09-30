@@ -8,8 +8,8 @@ const EventSchema = new Schema({
     type: String,
     required: true,
   },
-  active: {
-    type: Boolean,
+  description: {
+    type: String,
     default: true,
   },
 });

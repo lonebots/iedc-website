@@ -6,13 +6,16 @@ const mongoose = require("mongoose");
 const app = express()
 const api =require('./routes/api/api');
 
+var db=process.env.MONGO_DB_URI
+// console.log(db+"hi");
+
 // Connect to mongo
 mongoose
-  .connect(process.env.MONGO_DB_URI, { useNewUrlParser: true })
+  .connect(db+"iedc", { useNewUrlParser: true })
   .then(() => {
     console.log(`Database connected successfully `);
   })
-  .catch((err) => {
+  .catch((err) => { 
     console.log(`Unable to connect to the database ${err}`);
   });
 
