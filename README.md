@@ -1,9 +1,9 @@
 <!-- @format -->
 
-# iedc gect main website
+# IEDC GECT Main website (MERN STACK)
 
-_done with react and firebase(not finalized)_
-the web site works are finalized to do with react(front end) and firebase(back end) <br>
+
+
 
 ## UI design:
 
@@ -11,18 +11,18 @@ The main user interface is designed using figma and it is an interactive design 
 
 ## contents to be added
 
-1. main page
-2. app model(single page interacticve)
-3. fully funtional
-4. main events
-5. upcoming events
-6. informations about the team
-7. web team
-8. achievements
-9. projects section
-10. Fab lab section _facilities in short_
-11. Carousel - _sliding in picture and main events in past_
-12.
+1 ) Main page <br>
+2 ) App model(single page interactive) <br>
+3 ) fully funtional <br>
+4 ) Main events <br>
+5 ) Upcoming events <br>
+6 ) Team Information<br>
+7 ) Tech Team<br>
+8 ) Achievements<br>
+9 ) Projects section<br>
+10) Fab lab section _facilities in short_ <br>
+11)  Carousel - _sliding in picture and main events in past_<br>
+12) 
 
 
 ### Componets Updated List 
