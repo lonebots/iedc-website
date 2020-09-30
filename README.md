@@ -23,3 +23,11 @@ The main user interface is designed using figma and it is an interactive design 
 10. Fab lab section _facilities in short_
 11. Carousel - _sliding in picture and main events in past_
 12.
+
+
+### Componets Updated List 
+1. Main nav bar
+2. user page
+3. event card
+4. slider
+
