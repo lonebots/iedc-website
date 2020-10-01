@@ -8,6 +8,7 @@ const event = require('./event');
 
 router.use('/event', event)
 
+
 router.get('/', asyncHandler(async (req, res, next) => {
 
     //Declaring a query variable
@@ -63,3 +64,5 @@ router.get('/', asyncHandler(async (req, res, next) => {
 }))
 
 module.exports = router
+
+
