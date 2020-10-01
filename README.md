@@ -9,7 +9,7 @@
 
 The main user interface is designed using figma and it is an interactive design tool.
 <br/>
- [UI designed( Adobe XD)](https://awesomeopensource.com/project/Joonsang1994/free-tshirts-stickers-and-swag-for-developers)
+ [UI designed( Adobe XD)](https://xd.adobe.com/view/c0b52cca-a0eb-4712-8d35-5a2de99b2fd9-95e6/)
 ## contents to be added
 
 1 ) Main page <br>
