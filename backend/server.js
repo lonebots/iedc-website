@@ -1,23 +1,14 @@
 const express = require('express')
 const dotenv = require('dotenv')
-const mongoose = require("mongoose");
 
 // 
 const app = express()
-const api =require('./routes/api/api');
+const api = require('./routes/api/api');
+const connectDb = require('./config/db');
 
-var db=process.env.MONGO_DB_URI
-// console.log(db+"hi");
+//Connect to mongo
+connectDb()
 
-// Connect to mongo
-mongoose
-  .connect(db+"iedc", { useNewUrlParser: true })
-  .then(() => {
-    console.log(`Database connected successfully `);
-  })
-  .catch((err) => { 
-    console.log(`Unable to connect to the database ${err}`);
-  });
 
 //Loading all env variables
 dotenv.config({ path: './config/config.env' });
@@ -35,14 +26,19 @@ app.use(
   })
 );
 
-// API
-app.get('/',(req,resp)=>{
-    resp.send("Hmmm")
-})
-app.use('/api',api)
+//Mounting Route
+app.use('/api', api)
 
 //Listening to app
-app.listen(process.env.PORT, () => console.log(`Server running on ${process.env.NODE_ENV} mode on PORT ${process.env.PORT}`));
+const server = app.listen(process.env.PORT, () => console.log(`Server running on ${process.env.NODE_ENV} mode on PORT ${process.env.PORT}`));
+
+
+//Handling unhandled promise rejections
+process.on('unhandledRejection', (error, promise) => {
+  console.log(`Error:${error.message}`);
+
+  //Close the server and exit process
+  server.close(() => process.exit(1));
+})
 
 //'npm run dev' for running app in development mode 
-

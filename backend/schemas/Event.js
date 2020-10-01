@@ -6,16 +6,29 @@ const Schema = mongoose.Schema;
 const EventSchema = new Schema({
   name: {
     type: String,
-    required: true,
+    required: [true, 'Please enter the name!'],
   },
   description: {
     type: String,
-    default: true,
+    required: [true, 'Please enter the description!'],
   },
+  photo: {
+    type: String,
+    default: 'test.jpg'
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now
+  },
+  eventType: {
+    type: String,
+    required: [true, 'Please enter the event type']
+
+  }
 });
 
-var Event= mongoose.model("events", EventSchema);
 
-module.exports = Event;
- 
+
+module.exports = mongoose.model('Event', EventSchema);
+
 
