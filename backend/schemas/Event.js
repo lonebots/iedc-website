@@ -19,10 +19,16 @@ const EventSchema = new Schema({
   createdAt: {
     type: Date,
     default: Date.now
+  },
+  eventType: {
+    type: String,
+    required: [true, 'Please enter the event type']
+
   }
 });
 
 
-module.exports =mongoose.model('Event', EventSchema);
+
+module.exports = mongoose.model('Event', EventSchema);
 
 
