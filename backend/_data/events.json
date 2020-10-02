@@ -1,0 +1,24 @@
+[{
+    "name": "Product Expo",
+    "description": "Product Expo is adipolli and very big",
+    "photo":"test.jpg",
+    "createdAt":"",
+    "eventType":"Workshop"
+
+},
+{
+    "name": "Kickstart",
+    "description": "Kickstart is no raksha",
+    "photo":"test.jpg",
+    "createdAt":"",
+    "eventType":"Workshop"
+
+},
+{
+    "name": "GEC Hacks",
+    "description": "GEC Hacks pinne parayanda",
+    "photo":"test.jpg",
+    "createdAt":"",
+    "eventType":"Hackathon"
+
+}]

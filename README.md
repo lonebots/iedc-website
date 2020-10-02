@@ -1,13 +1,14 @@
 <!-- @format -->
 
-# iedc gect main website
+# IEDC GECT Main website (MERN STACK)
 
-_done with react and firebase(not finalized)_
-the web site works are finalized to do with react(front end) and firebase(back end) <br>
+
+
 
 ### UI design:
 
 The main user interface is designed using figma and it is an interactive design tool.
+
 
 ### Contents to be added
 
