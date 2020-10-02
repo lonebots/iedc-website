@@ -2,7 +2,7 @@ const asyncHandler = require("../middlewares/async");
 const Team = require("../schemas/Team");
 
 
-//GET all team datas
+//GET all team members datas
 // @access Public
 //METHOD GET
 exports.getTeam = asyncHandler(async (req, res, next) => {

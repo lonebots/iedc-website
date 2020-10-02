@@ -11,7 +11,7 @@ const team = require('./team')
 router.use('/event', event)
 router.use('/team', team)
 
-router.get('/', advancedQueryResults(Event), asyncHandler(async (req, res, next) => {
+router.route('/').get(advancedQueryResults(Event), asyncHandler(async (req, res, next) => {
 
     res.status(200).json(res.advancedQueryResults)
 

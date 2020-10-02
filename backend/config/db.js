@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const connectDb = async () => {
-    const conn = await mongoose.connect('mongodb+srv://iedcgect:iedcgect@1956@iedc-cluster.5gkuu.mongodb.net/iedc?retryWrites=true&w=majority', {
+    const conn = await mongoose.connect(process.env.MONGO_DB_URI, {
         useNewUrlParser: true,
         useCreateIndex: true,
         useFindAndModify: false,
