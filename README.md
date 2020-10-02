@@ -106,3 +106,76 @@ example
 
 
 
+### Technologies used
+1. Frontend - ejs, css, js
+2. Backend  - node, express, mongoDB  
+
+### Guidelines     
+- #### Setup
+  - cd iedc-gect
+  - npm i (use this only for the first time, and whenever new dependancies are added)
+  - node app.js (alternative - nodemon app.js)
+  
+ - #### Tips
+   - Follow the file structure given below.
+   - Use meaningful variable names if any.
+   - Try to maintain proper indentation. 
+   - ejs files are very similar to html, for now just change the extension from html to ejs
+   - ejs files inside views folder, css and js  files inside public folder  
+   - open to suggestions
+
+### Folder Structure
+```
+example     
+├── app.js
+├── package.json
+├── routes (all backend routes)    
+|   ├── route1.js     
+|   └── route2.js       
+├── models (if mongoose is used)        
+|   ├── model1.js       
+|   └── model2.js       
+├── public (folder to keep stylesheets and js files)             
+|   ├── css         
+|   |   └── (if possible try to maintain the same file structure inside views)        
+|   └── js          
+|       └── (if possible try to maintain the same file structure inside views)      
+└── views  
+    ├── pages
+    |   ├── home.ejs
+    |   ├── about.ejs
+    |   ├── events.ejs
+    |   ├── teams.ejs
+    |   └── achievements.ejs
+    └── partials
+        ├── navbar
+        |   ├── navbar.ejs
+        |   ├── navbarHeading
+        |   └── navbarLink
+        ├── homeHeader
+        |   ├── homeHeader.ejs
+        |   ├── logo.ejs
+        |   └── heading.ejs
+        ├── homeSlider
+        |   ├── homeSlider.ejs
+        |   ├── sliderText.ejs
+        |   ├── sliderButton.ejs
+        |   └── sliderImage.ejs
+        ├── homeCard
+        |   ├── homeCard.ejs
+        |   ├── cardHeading.ejs
+        |   ├── cardText.ejs
+        |   └── cardButton.ejs
+        ├── aboutText
+        |   └── aboutText.ejs
+        ├── eventsCard
+        |   ├── eventsCard.ejs
+        |   ├── cardHeading.ejs
+        |   └── cardText.ejs
+        ├── header (text + back button)
+        |   └── header.ejs    
+        └── footer (text + to top arrow) 
+            └── footer.ejs
+
+
+
