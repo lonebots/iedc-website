@@ -8,7 +8,6 @@ const event = require('./event');
 
 router.use('/event', event)
 
-
 router.get('/', asyncHandler(async (req, res, next) => {
 
     //Declaring a query variable
@@ -51,7 +50,7 @@ router.get('/', asyncHandler(async (req, res, next) => {
     //Number of datas for sliding
     const limit = parseInt(req.query.limit, 10) || 3;
 
-    //Adding skipping for showing number of entries from a page
+    //Executing limit property for number of datas for slider
     query = query.limit(limit);
     const slider = await query;
 
@@ -64,5 +63,3 @@ router.get('/', asyncHandler(async (req, res, next) => {
 }))
 
 module.exports = router
-
-
