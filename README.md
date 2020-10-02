@@ -3,11 +3,10 @@
 # IEDC GECT Main website (MERN STACK)
 
 
-
-
 ### UI design:
 
-The main user interface is designed using figma and it is an interactive design tool.
+The main user interface is designed AdobeXD.
+[**Reference UI design**](https://xd.adobe.com/view/c0b52cca-a0eb-4712-8d35-5a2de99b2fd9-95e6/)
 
 
 ### Contents to be added
@@ -26,9 +25,13 @@ The main user interface is designed using figma and it is an interactive design 
 
 ### Componets updated list 
 1. Main nav bar
-2. user page
-3. event card
-4. slider
+2. Home 
+3. About 
+4. Event( If possible splitting )
+5. Achievements
+6. slider
+7. Contact us(footer)
+7. user page (not visible from main page)
 
 ### Technologies used
 1. Frontend - ejs, css, js
