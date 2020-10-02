@@ -4,9 +4,11 @@ const router = express.Router();
 const Event=require('../../schemas/Event');
 
 const event = require('./event');
+const team=require('./team')
 
 
 router.use('/event', event)
+router.use('/team',team)
 
 router.get('/', asyncHandler(async (req, res, next) => {
 
