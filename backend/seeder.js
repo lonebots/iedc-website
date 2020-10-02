@@ -1,13 +1,14 @@
 const fs = require('fs');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const colors=require('colors')
+const colors = require('colors')
 
 //Load all env varibles
 dotenv.config({ path: './config/config.env' });
 
 //Load Models
 const Event = require('./schemas/Event');
+const Team = require('./schemas/Team');
 
 
 
@@ -21,11 +22,13 @@ mongoose.connect(process.env.MONGO_DB_URI, {
 
 //Read JSON files
 const events = JSON.parse(fs.readFileSync(`${__dirname}/_data/events.json`, 'utf-8'));
+const team = JSON.parse(fs.readFileSync(`${__dirname}/_data/team.json`, 'utf-8'));
 
 //Import into DB
 const importData = async () => {
     try {
         await Event.create(events);
+        await Team.create(team);
         console.log('Data imported'.green.inverse)
     } catch (error) {
         console.error(error)
@@ -36,6 +39,7 @@ const importData = async () => {
 const deleteData = async () => {
     try {
         await Event.deleteMany();
+        await Team.deleteMany();
         console.log('Data destroyed'.red.inverse)
     } catch (error) {
         console.error(error)
