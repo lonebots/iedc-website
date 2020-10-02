@@ -7,17 +7,7 @@ const Team = require("../schemas/Team");
 //METHOD GET
 exports.getTeam = asyncHandler(async (req, res, next) => {
 
-    const team = await Team.find();
-
-    if (!team) {
-        return next(new ErrorResponce(`Can't retrieve team data`, 400))
-    }
-
-    res.status(200).json({
-        success: true,
-        data: team,
-        count: team.length
-    })
+    res.status(200).json(res.advancedQueryResults);
 });
 
 

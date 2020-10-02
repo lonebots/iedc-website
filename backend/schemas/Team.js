@@ -10,7 +10,8 @@ const TeamSchema = new mongoose.Schema({
     image: String,
     teamType: {
         type: String,
-        enum: ['Core', 'Web']
+        enum: ['Core', 'Web'],
+        required:[true,'Please provide your teamType']
     },
     post: {
         type: String,
