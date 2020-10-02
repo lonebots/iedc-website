@@ -1,0 +1,28 @@
+[{
+    "name":"Baburaj",
+    "image":"test.jpg",
+    "post":"Chief Creator",
+    "teamType":"Web",
+    "createdAt":""
+},
+{
+    "name":"Karunan P",
+    "image":"test.jpg",
+    "post":"Chief Financial Officer",
+    "teamType":"Core",
+    "createdAt":""
+},
+{
+    "name":"Kiran Babu",
+    "image":"test.jpg",
+    "post":"UI Designer",
+    "teamType":"Web",
+    "createdAt":""
+},
+{
+    "name":"Shakeela PP",
+    "image":"test.jpg",
+    "post":"Chief Executive Officer",
+    "teamType":"Core",
+    "createdAt":""
+}]

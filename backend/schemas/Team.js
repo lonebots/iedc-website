@@ -10,11 +10,12 @@ const TeamSchema = new mongoose.Schema({
     image: String,
     teamType: {
         type: String,
-        enum: ['Core Team', 'Web Team']
+        enum: ['Core', 'Web']
     },
     post: {
         type: String,
-        required: [true, 'Please enter your post']
+        required: [true, 'Please enter your post'],
+        unique:true
     },
     createdAt: {
         type: Date,
