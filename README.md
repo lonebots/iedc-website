@@ -43,8 +43,9 @@ The main user interface is designed AdobeXD.
   - clone the repo
   - cd iedc-website
   - npm i (use this only for the first time, and whenever new dependancies are added)
-  - npm run dev (alternative - nodemon app.js)
-  - open http://localhost:5000/about
+  - to start the server:
+    - npm run dev (inside iedc-website folder)
+    - open http://localhost:5000/about
   
 - #### Tips
   - Follow the file structure given below.
