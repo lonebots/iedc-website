@@ -1,0 +1,21 @@
+<% var links = ['Home','About','Teams','Events','Achievements'] %>
+
+<ul class="right hide-on-med-and-down">
+    <% for(var i=0;i<links.length;i++) { %>
+        <li>
+            <a class="black-text"  href=<%= "/" + links[i].toLowerCase() %> > 
+                <%= links[i] %> 
+            </a>
+        </li>
+    <% } %>
+</ul>
+
+<ul class="sidenav" id="mobile-nav">
+    <% for(var i=0;i<links.length;i++) { %>
+        <li>
+            <a href=<%= "/" + links[i].toLowerCase() %> >
+                <%= links[i] %>
+            </a>
+        </li>
+    <% } %>
+</ul>

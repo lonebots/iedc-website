@@ -1,13 +1,20 @@
 const express = require("express");
 const router = express.Router();
-const event = require('../../schemas/Event')
+const event = require('../schemas/Event')
+
+
+router.get('/', function(req,resp){
+    resp.render("./pages/events");
+});
+
 
 router.post('/add',(req,resp)=>{
     var newEvent = new event(req.body)
     newEvent.save().then((doc)=>{
         if(doc){
             return resp.json({success:true})
-        }else {
+        }
+        else {
             return resp.json({success:false})
         }
     }).catch((e)=>{
@@ -16,4 +23,4 @@ router.post('/add',(req,resp)=>{
 })
 
 
-module.exports =router
+module.exports = router
