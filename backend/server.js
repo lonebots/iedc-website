@@ -6,12 +6,9 @@ const app = express()
 const api = require('./routes/api/api');
 const connectDb = require('./config/db');
 
+
 //Connect to mongo
 connectDb()
-
-
-//Loading all env variables
-dotenv.config({ path: './config/config.env' });
 
 // Static directory
 app.use(express.static(__dirname + "/public"));
