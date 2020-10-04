@@ -4,10 +4,6 @@ const router = express.Router();
 const dotenv = require('dotenv');
 const connectDb = require('./backend/config/db');
 const ejs = require('ejs');
-const asyncHandler = require("./backend/middlewares/async");
-const Event = require('./backend/schemas/Event');
-const advancedQueryResults = require('./backend/middlewares/advancedQueryResults');
-
 const events = require('./backend/routes/events');
 const teams = require('./backend/routes/teams');
 const about = require('./backend/routes/about');
@@ -33,10 +29,6 @@ app.use(
     extended: true,
   })
 );
-
-router.route('/').get(advancedQueryResults(Event), asyncHandler(async (req, res, next) => {
-  res.status(200).json(res.advancedQueryResults);
-}))
 
 //Mounting Route
 app.use('/events', events);
