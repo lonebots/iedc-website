@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Axiforma";
+  src: url(fonts\Axiforma-Light.ttf);
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url(fonts\Axiforma-Italic.ttf);
+  font-style: italic;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url(fonts\Axiforma-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url(fonts\Axiforma-Thin.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url(fonts\Axiforma-Bold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+.textRed {
+  color: #cf0000;
+}
+
+.textGrey {
+  color: #7d7d7d;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 267px;
+}
+.backhome {
+  flex: 1;
+  justify-content: flex-start;
+  top: 201px;
+  left: 104px;
+  width: 246px;
+  height: 36px;
+}
+.text {
+  font-family: "Axiforma";
+  font-weight: light;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+}
+.iedcText {
+  flex: 1;
+}
+.iedc {
+  letter-spacing: 0px;
+  opacity: 1;
+  font-family: "Axiforma";
+  font-weight: bold;
+  color: #7d7d7d;
+}
+.image {
+  margin-top: 10px;
+}
+.content {
+  width: 100%;
+  letter-spacing: 0px;
+  opacity: 1;
+  font-family: "Axiforma";
+}
+.frame {
+  width: 1000px;
+  height: 576px;
+}
+.contentText b {
+  margin-left: 52px;
+  font-size: 50px;
+  color: #cf0000;
+}
+.contentText p {
+  margin-left: 52px;
+  font-size: 26px;
+  color: #7d7d7d;
+}
+.contentText hr {
+  border: 1px solid #7070701a;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*.heading {
+  position: absolute;
+  top: 67px;
+  background: #ffffff;
+  width: 100%;
+  height: 231px;
+}
+
+hr {
+  position: absolute;
+  top: 293px;
+  left: -90px;
+
+  border: none;
+  height: 20px;
+  width: 85%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #707070;
+
+  margin: -50px auto 10px;
+}
+
+.text {
+  position: absolute;
+  top: 49px;
+  left: 26px;
+  font-family: "Axiforma";
+  font-weight: light;
+  text-align: left;
+
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+}
+
+.image {
+  padding-left: -17px;
+  padding-top: 51px;
+}
+.iedc {
+  position: absolute;
+  font-size: 69px;
+  text-align: center;
+  top: 49px;
+  left: 26px;
+  letter-spacing: 0px;
+  opacity: 1;
+  font-family: "Axiforma";
+  font-weight: bold;
+  font-size: 70px;
+  color: #7d7d7d;
+}*/
