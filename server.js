@@ -1,17 +1,13 @@
 const express = require('express');
 const app = express();
-const router = express.Router();
 const dotenv = require('dotenv');
 const connectDb = require('./backend/config/db');
 const ejs = require('ejs');
-const asyncHandler = require("./backend/middlewares/async");
-const Event = require('./backend/schemas/Event');
-const advancedQueryResults = require('./backend/middlewares/advancedQueryResults');
-
 const events = require('./backend/routes/events');
 const teams = require('./backend/routes/teams');
 const about = require('./backend/routes/about');
 const home = require('./backend/routes/home');
+const auth = require('./backend/routes/auth');
 const achievements = require('./backend/routes/achievements');
 
 //setting up ejs and Static directory
@@ -34,16 +30,13 @@ app.use(
   })
 );
 
-router.route('/').get(advancedQueryResults(Event), asyncHandler(async (req, res, next) => {
-  res.status(200).json(res.advancedQueryResults);
-}))
-
 //Mounting Route
 app.use('/events', events);
 app.use('/teams', teams);
 app.use('/about',about);
 app.use('/home', home);
 app.use('/achievements',achievements);
+//app.use('/iedcloginpage',auth);
 
 //Listening to app
 const server = app.listen(process.env.PORT, () => console.log(`Server running on ${process.env.NODE_ENV} mode on PORT ${process.env.PORT}`));

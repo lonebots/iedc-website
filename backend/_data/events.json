@@ -21,4 +21,12 @@
     "createdAt":"",
     "eventType":"Hackathon"
 
+},
+{
+    "name": "Tales of Triumphs",
+    "description": "Tales of Triumphs event created for our aluminis",
+    "photo":"test.jpg",
+    "createdAt":"",
+    "eventType":"Webinar"
+
 }]
