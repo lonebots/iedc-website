@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEDC Gec Thrissur</title>
+  <%- include('../partials/home/homeLinks') %>
+
+</head>
+
+<body>
+  <%- include('../partials/navbar/navbar') %>
+  <h1>Home Page</h1>
+  <% home.data.forEach(function(obj) { %>
+  <li>
+    <strong><%= obj.name %></strong>
+  </li>
+  <% }); %>
+  <%- include('../partials/home/homeScripts') %>
+</body>
+
+</html>
