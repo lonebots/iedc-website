@@ -10,6 +10,12 @@
   <body>
     <%- include('../partials/navbar/navbar') %>
     <h1>Teams Page</h1>
+    <% team.data.forEach(function(obj) { %>
+      <li>
+        <strong><%= obj.name %></strong>
+        post <%= obj.post %>, teamType <%= obj.teamType %>,Image <%= obj.image %>
+      </li>
+      <% }); %>
     <%- include('../partials/teams/teamsScripts') %>
   </body>
 </html>
