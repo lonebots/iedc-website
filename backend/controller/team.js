@@ -8,7 +8,7 @@ const Team = require("../schemas/Team");
 exports.getTeam = asyncHandler(async (req, res, next) => {
 
 
-    resp.status(200).render("./pages/teams", (res.advancedQueryResults));
+    res.status(200).render('./pages/teams', { team: res.advancedQueryResults });
 
 });
 
