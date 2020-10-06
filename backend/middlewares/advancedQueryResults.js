@@ -39,7 +39,7 @@ const advancedQueryResults = (model) => async (req, res, next) => {
 
 
     //Number of datas for sliding
-    const limit = parseInt(req.query.limit, 10) || 3;
+    const limit = parseInt(req.query.limit, 10) || 100;
 
     //Executing limit property for number of datas for slider
     query = query.limit(limit);
