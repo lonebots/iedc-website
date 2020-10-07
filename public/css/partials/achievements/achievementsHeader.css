@@ -43,20 +43,27 @@
 i {
     line-height: inherit;
     font-size: 20px;
+    position: relative;
+    top: -5px;
 }
 
 .footer{
     padding-left: 129px;
-    padding-top: 1759px;
+    padding-top: 1712px;
     top: 1225px;
     color:#616161
     
 }
 
+.iedcfooter{
+    padding-top: 136px;
+}
+
 .uptext{
     position: absolute;
+    padding-top: 1px;
     /* padding-top: 1688px; */
-    top: 1936px;
+    top: 1890px;
     left: 870px;
     font-family: 'Axiforma';
     color: #7d7d7d;
@@ -70,4 +77,27 @@ i {
     opacity: 70%; 
     color: #707070
     
+}
+
+.contentFrame1{
+    background-color: #f9f9f9;
+    padding-left: 116px;
+    width: 112%;
+    margin-left: 95px;
+    border: 1px solid #00000029;
+    
+    
+
+}
+
+.contentFrame2{
+    padding-left: 116px;
+    width: 112%;
+    margin-left: 95px;
+   
+}
+
+.text{
+    position: relative;
+    right: 87px;
 }
