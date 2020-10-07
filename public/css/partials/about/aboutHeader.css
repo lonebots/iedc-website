@@ -27,14 +27,14 @@
 .iedcHeading{
     position: absolute;
     font-size: 69px;
-    left: 24px;
-    top: 43px;
+    left: 477px;
+    top: -8px;
     text-align: center;
     letter-spacing: 0px;
     opacity: 1;
     font-family: 'Axiforma';
-    font-weight: bold;
-    font-size: 70px;
+    font-weight: regular;
+    font-size: 59px;
     color: #7d7d7d;
 }
 
