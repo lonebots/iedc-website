@@ -6,7 +6,7 @@
 ### UI design:
 
 The main user interface is designed AdobeXD.
-[**Reference UI design**](https://xd.adobe.com/view/c0b52cca-a0eb-4712-8d35-5a2de99b2fd9-95e6/)
+[**Reference UI design**](https://xd.adobe.com/view/589df37a-5601-4512-8d2d-d1d3a0728ec7-0dce/)
 
 
 ### Contents to be added
