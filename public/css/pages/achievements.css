@@ -4,11 +4,11 @@
     position: absolute;
     top: 221px;
     text-align: left;
-    letter-spacing: 0px;
-    opacity: 1;
-    font-family: 'Axiforma';
-    font-size: 24px;
-    color: rgb(115, 115, 126);
+    letter-spacing: 0.1px;
+    opacity: 1.2;
+    font-family: 'Roboto';
+    font-size: 26px;
+    color: rgb(114, 115, 126);
   }
 
   .content b{
