@@ -1,3 +1,20 @@
 <div class=carousel>
-    for
+    <%home.data.forEach(function(obj){%>
+    <h2><%= obj.name%></h2>
+    <p><%=obj.description%></p>
+    <img src=<%=obj.photo%> alt="event-pic" />
+    <%});%>
 </div>
+
+
+
+<!--
+      
+      <h1>Home Page</h1>
+      <% home.data.forEach(function(obj) { %>
+    <li>
+        <strong><%= obj.name %></strong>
+        description =<%= obj.description %>, Event type= <%= obj.eventType %>,Image= <%= obj.photo %>
+    </li>
+    <% }); %>
+    -->
