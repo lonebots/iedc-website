@@ -11,9 +11,7 @@
 
 <body>
   <%- include('../partials/navbar/navbar') %>
-
   <%- include('../partials/home/homeHeader') %>
-  <div class="container"></div>
   <div class="content">
     <!--
       
@@ -24,10 +22,10 @@
         description =<%= obj.description %>, Event type= <%= obj.eventType %>,Image= <%= obj.photo %>
       </li>
       <% }); %>
-      <%- include('../partials/home/homeScripts') %>-->
-  </div>
+      -->
   </div>
 
+  <%- include('../partials/home/homeScripts') %>
 </body>
 
 </html>
