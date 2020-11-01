@@ -11,14 +11,23 @@
 
 <body>
   <%- include('../partials/navbar/navbar') %>
-  <h1>Home Page</h1>
-  <% home.data.forEach(function(obj) { %>
-  <li>
-    <strong><%= obj.name %></strong>
-    description =<%= obj.description %>, Event type= <%= obj.eventType %>,Image= <%= obj.photo %>
-  </li>
-  <% }); %>
-  <%- include('../partials/home/homeScripts') %>
+
+  <%- include('../partials/home/homeHeader') %>
+  <div class="container"></div>
+  <div class="content">
+    <!--
+      
+      <h1>Home Page</h1>
+      <% home.data.forEach(function(obj) { %>
+      <li>
+        <strong><%= obj.name %></strong>
+        description =<%= obj.description %>, Event type= <%= obj.eventType %>,Image= <%= obj.photo %>
+      </li>
+      <% }); %>
+      <%- include('../partials/home/homeScripts') %>-->
+  </div>
+  </div>
+
 </body>
 
 </html>
