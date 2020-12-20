@@ -14,7 +14,7 @@ const EventSchema = new Schema({
   },
   photo: {
     type: String,
-    default: 'test.jpg'
+    default: 'test.png'
   },
   createdAt: {
     type: Date,

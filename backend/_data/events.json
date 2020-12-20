@@ -1,32 +1,30 @@
-[{
+[
+  {
     "name": "Product Expo",
     "description": "Product Expo is adipolli and very big",
-    "photo":"test.jpg",
-    "createdAt":"",
-    "eventType":"Workshop"
-
-},
-{
+    "photo": "test.jpg",
+    "createdAt": "",
+    "eventType": "Workshop"
+  },
+  {
     "name": "Kickstart",
     "description": "Kickstart is no raksha",
-    "photo":"test.jpg",
-    "createdAt":"",
-    "eventType":"Workshop"
-
-},
-{
+    "photo": "test.jpg",
+    "createdAt": "",
+    "eventType": "Workshop"
+  },
+  {
     "name": "GEC Hacks",
     "description": "GEC Hacks pinne parayanda",
-    "photo":"test.jpg",
-    "createdAt":"",
-    "eventType":"Hackathon"
-
-},
-{
+    "photo": "test.jpg",
+    "createdAt": "",
+    "eventType": "Hackathon"
+  },
+  {
     "name": "Tales of Triumphs",
     "description": "Tales of Triumphs event created for our aluminis",
-    "photo":"test.jpg",
-    "createdAt":"",
-    "eventType":"Webinar"
-
-}]
+    "photo": "test.jpg",
+    "createdAt": "",
+    "eventType": "Webinar"
+  }
+]
